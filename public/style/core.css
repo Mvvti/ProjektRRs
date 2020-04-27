@@ -1,0 +1,28 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    --mo-background-color: #ddd;
+    --mo-surface-color: #fff;
+    --mo-base-color: #ef5350;
+    --mo-margin: 24px 12px;
+    --mo-padding: 12px;
+    --mo-gap: 32px;
+}
+
+@media (min-width: 1024px) {
+    body {
+        --mo-gap: 24px;
+        --mo-padding: 24px;
+        --mo-margin: 32px 48px;
+    }
+}
+
+header, footer {
+    background: var(--mo-base-color);
+    padding: var(--mo-margin);
+    padding-top: var(--mo-padding);
+    padding-bottom: var(--mo-padding);
+}
+
+h1 {
+    margin: 0;
+}

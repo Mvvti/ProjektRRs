@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mail rss</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ef5350">
+    <base href="/">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/core.css">
+    <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="style/rss.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Mail RSS</h1>
+    </header>
+
+    <main>
+        <form id="news">
+            <div class="field">
+                <label>Adres kanału rss</label>
+                <input name="url" placeholder="RSS URL" value="https://rss.gazeta.pl/pub/rss/gazetawyborcza_swiat.xml">
+                <button>WYŚWIETL</button>
+            </div>
+        </form>
+
+        <section class="rss-channel">
+
+            <form id="email" style="display: none;">
+    
+                <div class="field">
+                    <label>Wyślij na adres email</label>
+                    <input name="email" placeholder="EMAIL">
+                    <button class="send-mail">WYŚLIJ</button>
+                </div>
+            </form>
+
+            <h2 id="title"></h2>
+            <div class="rss-channel-body">
+
+            </div>
+        </section>
+
+        <noscript>
+            <p>Ta aplikacja wymaga właczonego javascriptu.</p>
+        </noscript>
+
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-functions.js"></script>
+        <script src="script/rss.js"></script>
+        <script src="script/index.js"></script>
+    </main>
+
+    <footer>
+        &copy; Copyright Mateusz Orzeszyna 2020
+    </footer>
+</body>
+
+</html>

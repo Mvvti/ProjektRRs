@@ -1,0 +1,1 @@
+Jest to aplikacja internetowa umożliwiająca wyświetlenie rss ze wskazanego adresu url. Po wpisaniu w odpowiednim miejscu adresu oraz użyciu przycisku wyświetl pojawi się graficzna interpretacja aktualności danego kanału rss. Po wyświetleniu wiadomości pojawi się również możliwośc wysłania tych wiadomości na wskazany adres email
